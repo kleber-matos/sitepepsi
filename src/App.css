@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+html {
+  background-color: rgb(2, 97, 191);
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.bigRefri {
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.boxRefri {
+  width: 20rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: end;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.textBox,
+.redeSociais,
+.cardBigRefri {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: sans-serif;
+
+}
+
+.smallRefri {
+  width: 5rem;
+  height: 8rem;
+}
+
+.smallRefri:hover {
+  margin-bottom: 2rem;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.iconsRede {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.redeSociais svg {
+  padding-top: 10px;
+}
+
+.textBox {
+  width: 35%;
+  color: white;
+  font-weight: bolder;
+}
+
+.textBox h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.textMenu {
+  width: 50%;
+}
+
+.textMenu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.textMenu ul li {
+  list-style: none;
+  font-size: 1.5rem;
+  font-family: sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.textMenu ul li:hover {
+  color: rgba(255, 255, 255, 0.658);
+  transition: .5s;
+  cursor: pointer;
+  font-size: 1.6rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.btnProduct {
+  width: 30%;
+  height: 3rem;
+  border: none;
+  font-weight: bolder;
+  border-radius: 1rem;
+}
+
+.btnProduct:hover {
+  width: 30.2%;
+  opacity: 0.5;
+  transition: .5s;
+}
+
+.logo img {
+  width: 8rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+section {
+  height: 85vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+strong {
+  font-size: 7rem;
 }
